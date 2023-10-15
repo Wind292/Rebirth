@@ -14,8 +14,15 @@ object RebirthItemGroup {
     val REBIRTH_GROUP: ItemGroup = FabricItemGroup.builder()
         .icon { ItemStack(RebirthItems.RUBY) }
         .displayName(Text.translatable("itemGroup.rebirth.rebirth_group"))
-        .entries { _, entries -> entries.add(RebirthItems.RUBY) }
+        .entries { _, entries ->
+
+            entries.add(RebirthItems.RUBY)
+            entries.add(RebirthItems.RAW_RUBY)
+
+        }
         .build()
+
+
 
 
     fun registerItemGroups() {
