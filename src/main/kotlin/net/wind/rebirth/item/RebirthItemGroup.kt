@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry
 import net.minecraft.text.Text
 import net.minecraft.util.Identifier
 import net.wind.rebirth.RebirthMod
+import net.wind.rebirth.block.RebirthBlocks
 
 
 object RebirthItemGroup {
@@ -18,6 +19,7 @@ object RebirthItemGroup {
 
             entries.add(RebirthItems.RUBY)
             entries.add(RebirthItems.RAW_RUBY)
+            entries.add(RebirthBlocks.RUBY_BLOCK)
 
         }
         .build()

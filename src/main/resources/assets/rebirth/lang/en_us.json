@@ -2,6 +2,7 @@
   "item.rebirth.ruby": "Ruby",
   "item.rebirth.raw_ruby": "Raw Ruby",
 
+  "block.rebirth.ruby_block": "Ruby Block",
 
-  "itemGroup.rebirth.rebirth_group": "Rebirth Items!"
+  "itemGroup.rebirth.rebirth_group": "Rebirth Item Group"
 }
