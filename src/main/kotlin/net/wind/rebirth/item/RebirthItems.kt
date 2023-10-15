@@ -9,7 +9,7 @@ import net.minecraft.registry.Registries
 import net.minecraft.util.Identifier
 import net.wind.rebirth.RebirthMod
 
-class ModItems {
+class RebirthItems {
 
     companion object {
 
@@ -29,7 +29,7 @@ class ModItems {
         fun registerModItems() {
             RebirthMod.logger.info("Registering Mod Items for " + RebirthMod.MOD_ID)
 
-            ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup)
+            ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(RebirthItems::addItemsToIngredientTabItemGroup)
         }
     }
 

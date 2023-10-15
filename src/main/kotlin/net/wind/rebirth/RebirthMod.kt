@@ -1,7 +1,8 @@
 package net.wind.rebirth
 
 import net.fabricmc.api.ModInitializer
-import net.wind.rebirth.item.ModItems
+import net.wind.rebirth.item.RebirthItemGroup
+import net.wind.rebirth.item.RebirthItems
 import org.slf4j.LoggerFactory
 
 object RebirthMod : ModInitializer {
@@ -14,7 +15,8 @@ object RebirthMod : ModInitializer {
 
 		logger.info("Hello Fabric world!")
 
-		ModItems.registerModItems()
+		RebirthItems.registerModItems()
+		RebirthItemGroup.registerItemGroups()
 
 	}
 }
