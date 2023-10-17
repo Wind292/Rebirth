@@ -21,7 +21,7 @@ object RebirthMod : ModInitializer {
 		RebirthItems.registerModItems()
 		RebirthItemGroup.registerItemGroups()
 		RebirthBlocks.registerModBlocks()
-		RebirthBlocks.registerModOreSpawn()
+		RebirthBlocks.registerModOreSpawn() // lmao not like OreSpawn mod, is for generating ore
 
 	}
 }
