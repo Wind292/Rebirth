@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "" : {
+      "model": "rebirth:block/raw_ruby_block"
+    }
+  }
+}

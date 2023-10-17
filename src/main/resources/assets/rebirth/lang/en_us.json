@@ -3,6 +3,8 @@
   "item.rebirth.raw_ruby": "Raw Ruby",
 
   "block.rebirth.ruby_block": "Ruby Block",
+  "block.rebirth.raw_ruby_block": "Raw Ruby Block",
+  "block.rebirth.ruby_ore": "Ruby Ore",
 
   "itemGroup.rebirth.rebirth_group": "Rebirth Item Group"
 }

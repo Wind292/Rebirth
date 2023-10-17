@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "rebirth:ruby_block",
+    "rebirth:raw_ruby_block",
+    "rebirth:ruby_ore"
+  ]
+}

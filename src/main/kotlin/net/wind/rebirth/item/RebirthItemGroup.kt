@@ -20,6 +20,8 @@ object RebirthItemGroup {
             entries.add(RebirthItems.RUBY)
             entries.add(RebirthItems.RAW_RUBY)
             entries.add(RebirthBlocks.RUBY_BLOCK)
+            entries.add(RebirthBlocks.RAW_RUBY_BLOCK)
+            entries.add(RebirthBlocks.RUBY_ORE)
 
         }
         .build()
