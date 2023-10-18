@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
+    "   ",
     "###",
-    "# #",
     "# #"
   ],
   "key": {
     "#": {
-      "item": "rebirth:raw_ruby"
+      "item": "rebirth:ruby"
     }
   },
 
   "result": {
-    "item": "rebirth:ruby_leggings"
+    "item": "rebirth:ruby_helmet"
   }
 }
