@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "" : {
+      "model": "rebirth:block/deepslate_ruby_ore"
+    }
+  }
+}

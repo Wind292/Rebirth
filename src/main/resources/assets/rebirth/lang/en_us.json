@@ -5,6 +5,14 @@
   "block.rebirth.ruby_block": "Ruby Block",
   "block.rebirth.raw_ruby_block": "Raw Ruby Block",
   "block.rebirth.ruby_ore": "Ruby Ore",
+  "block.rebirth.deepslate_ruby_ore": "Deepslate Ruby Ore",
+
+  "item.rebirth.ruby_helmet": "Ruby Helmet",
+  "item.rebirth.ruby_chestplate": "Ruby Chestplate",
+  "item.rebirth.ruby_leggings": "Ruby Leggings",
+  "item.rebirth.ruby_boots": "Ruby Boots",
+
 
   "itemGroup.rebirth.rebirth_group": "Rebirth Item Group"
+
 }

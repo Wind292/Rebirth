@@ -22,6 +22,13 @@ object RebirthItemGroup {
             entries.add(RebirthBlocks.RUBY_BLOCK)
             entries.add(RebirthBlocks.RAW_RUBY_BLOCK)
             entries.add(RebirthBlocks.RUBY_ORE)
+            entries.add(RebirthBlocks.DEEPSLATE_RUBY_ORE)
+
+            entries.add(RebirthItems.RUBY_HELMET)
+            entries.add(RebirthItems.RUBY_CHESTPLATE)
+            entries.add(RebirthItems.RUBY_LEGGINGS)
+            entries.add(RebirthItems.RUBY_BOOTS)
+
 
         }
         .build()
