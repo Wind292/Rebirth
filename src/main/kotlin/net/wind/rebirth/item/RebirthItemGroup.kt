@@ -30,6 +30,14 @@ object RebirthItemGroup {
             entries.add(RebirthItems.RUBY_BOOTS)
 
 
+            entries.add(RebirthItems.RUBY_SWORD)
+            entries.add(RebirthItems.RUBY_LONGSWORD)
+            entries.add(RebirthItems.RUBY_PICKAXE)
+            entries.add(RebirthItems.RUBY_AXE)
+            entries.add(RebirthItems.RUBY_SHOVEL)
+            entries.add(RebirthItems.RUBY_HOE)
+
+
         }
         .build()
 

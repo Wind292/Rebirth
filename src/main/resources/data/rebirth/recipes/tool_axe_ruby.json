@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ##",
+    " |#",
+    " | "
+  ],
+  "key": {
+    "#": {
+      "item": "rebirth:ruby"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result": {
+    "item": "rebirth:ruby_axe"
+  }
+}
