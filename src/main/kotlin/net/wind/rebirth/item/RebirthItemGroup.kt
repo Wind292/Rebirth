@@ -27,7 +27,7 @@ object RebirthItemGroup {
             entries.add(RebirthItems.RUBY_CHESTPLATE)
             entries.add(RebirthItems.RUBY_LEGGINGS)
             entries.add(RebirthItems.RUBY_BOOTS)
-
+            //entries.add(RebirthItems.SOUND_BLOCK)
 
         }
         .build()

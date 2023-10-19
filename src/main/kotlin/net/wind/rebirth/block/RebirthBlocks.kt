@@ -27,7 +27,9 @@ class RebirthBlocks {
 
         // You can do it like this also
         val RUBY_BLOCK = registerBlock("ruby_block", Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)))
+
         val RAW_RUBY_BLOCK = registerBlock("raw_ruby_block", Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)))
+        val SOUND_BLOCK = registerBlock("sound_block", Block(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK)))
 
         val RUBY_ORE = registerBlock("ruby_ore", Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).hardness(4.5f)))
         val RUBY_ORE_PLACE_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier("rebirth", "ruby_ore"))
