@@ -23,10 +23,10 @@ class RebirthItems {
         val RUBY_LEGGINGS = registerItem("ruby_leggings", ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, FabricItemSettings()))
         val RUBY_BOOTS = registerItem("ruby_boots", ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, FabricItemSettings()))
 
-        val RUBY_SWORD = registerItem("ruby_sword", SwordItem(ModToolMaterial.RUBY, 9, -4f+ 1.6f, FabricItemSettings()))
+        val RUBY_SWORD = registerItem("ruby_sword", SwordItem(ModToolMaterial.RUBY, 8, -4f+ 1.6f, FabricItemSettings()))
         val RUBY_LONGSWORD = registerItem("ruby_longsword", SwordItem(ModToolMaterial.RUBY, 13, -4f+.7f, FabricItemSettings()))
         val RUBY_PICKAXE = registerItem("ruby_pickaxe", PickaxeItem(ModToolMaterial.RUBY, 6, -4f+ 1.2f, FabricItemSettings()))
-        val RUBY_AXE = registerItem("ruby_axe", AxeItem(ModToolMaterial.RUBY, 9.0f, -4f+ 1.15f, FabricItemSettings()))
+        val RUBY_AXE = registerItem("ruby_axe", AxeItem(ModToolMaterial.RUBY, 10.0f, -4f+ 1.15f, FabricItemSettings()))
         val RUBY_SHOVEL = registerItem("ruby_shovel", ShovelItem(ModToolMaterial.RUBY, 5.0f, -4f+ 1f, FabricItemSettings()))
         val RUBY_HOE = registerItem("ruby_hoe", HoeItem(ModToolMaterial.RUBY, 4, -4f+ .5f, FabricItemSettings()))
 
