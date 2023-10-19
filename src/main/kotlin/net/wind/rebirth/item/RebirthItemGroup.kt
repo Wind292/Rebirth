@@ -22,12 +22,21 @@ object RebirthItemGroup {
             entries.add(RebirthBlocks.RUBY_BLOCK)
             entries.add(RebirthBlocks.RAW_RUBY_BLOCK)
             entries.add(RebirthBlocks.RUBY_ORE)
+            entries.add(RebirthBlocks.DEEPSLATE_RUBY_ORE)
 
             entries.add(RebirthItems.RUBY_HELMET)
             entries.add(RebirthItems.RUBY_CHESTPLATE)
             entries.add(RebirthItems.RUBY_LEGGINGS)
             entries.add(RebirthItems.RUBY_BOOTS)
             //entries.add(RebirthItems.SOUND_BLOCK)
+
+            entries.add(RebirthItems.RUBY_SWORD)
+            entries.add(RebirthItems.RUBY_LONGSWORD)
+            entries.add(RebirthItems.RUBY_PICKAXE)
+            entries.add(RebirthItems.RUBY_AXE)
+            entries.add(RebirthItems.RUBY_SHOVEL)
+            entries.add(RebirthItems.RUBY_HOE)
+
 
         }
         .build()

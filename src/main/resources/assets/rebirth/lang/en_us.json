@@ -5,13 +5,20 @@
   "block.rebirth.ruby_block": "Ruby Block",
   "block.rebirth.raw_ruby_block": "Raw Ruby Block",
   "block.rebirth.ruby_ore": "Ruby Ore",
+  "block.rebirth.deepslate_ruby_ore": "Deepslate Ruby Ore",
 
   "item.rebirth.ruby_helmet": "Ruby Helmet",
   "item.rebirth.ruby_chestplate": "Ruby Chestplate",
   "item.rebirth.ruby_leggings": "Ruby Leggings",
   "item.rebirth.ruby_boots": "Ruby Boots",
 
+  "item.rebirth.ruby_sword": "Ruby Sword",
+  "item.rebirth.ruby_longsword": "Ruby Longsword",
+  "item.rebirth.ruby_axe": "Ruby Axe",
+  "item.rebirth.ruby_pickaxe": "Ruby Pickaxe",
+  "item.rebirth.ruby_shovel": "Ruby Shovel",
+  "item.rebirth.ruby_hoe": "Ruby Hoe",
 
-  "itemGroup.rebirth.rebirth_group": "Rebirth Item Group"
+  "itemGroup.rebirth.rebirth_group": "Rebirth Items"
 
 }
