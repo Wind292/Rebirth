@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.kaupenjoe.tutorialmod.item.ModArmorMaterials
 import net.kaupenjoe.tutorialmod.item.ModToolMaterial
+import net.wind.rebirth.item.magicCrown.MagicCrownCreationLogic
 import net.kaupenjoe.tutorialmod.item.custom.ModArmorItemWithFullSetBonus
 import net.minecraft.item.*
 import net.minecraft.registry.Registries
@@ -29,6 +30,9 @@ class RebirthItems {
         val RUBY_AXE = registerItem("ruby_axe", AxeItem(ModToolMaterial.RUBY, 10.0f, -4f+ 1.15f, FabricItemSettings()))
         val RUBY_SHOVEL = registerItem("ruby_shovel", ShovelItem(ModToolMaterial.RUBY, 5.0f, -4f+ 1f, FabricItemSettings()))
         val RUBY_HOE = registerItem("ruby_hoe", HoeItem(ModToolMaterial.RUBY, 4, -4f+ .5f, FabricItemSettings()))
+
+        val MAGIC_CROWN = registerItem("magic_crown", MagicCrownCreationLogic(ModArmorMaterials.MAGIC, ArmorItem.Type.HELMET, FabricItemSettings()))
+
 
         private fun addItemsToIngredientTabItemGroup(entries: FabricItemGroupEntries){
             entries.add(RUBY)

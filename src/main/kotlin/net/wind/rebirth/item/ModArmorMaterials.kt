@@ -2,6 +2,7 @@ package net.kaupenjoe.tutorialmod.item
 
 import net.minecraft.item.ArmorItem
 import net.minecraft.item.ArmorMaterial
+import net.minecraft.item.Item
 import net.minecraft.recipe.Ingredient
 import net.minecraft.sound.SoundEvent
 import net.minecraft.sound.SoundEvents
@@ -24,7 +25,11 @@ enum class ModArmorMaterials(
             Ingredient.ofItems(
                 RebirthItems.RUBY
             )
-        });
+        }),
+
+    // Define your "Magic" armor material here
+    MAGIC("magic", 0, intArrayOf(0, 0, 0, 0), 0,
+        SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0f, 0.0f, Supplier<Ingredient> {Ingredient.ofItems(RebirthItems.RUBY)});
 
     override fun getDurability(type: ArmorItem.Type): Int {
         return BASE_DURABILITY[type.ordinal] * durabilityMultiplier
