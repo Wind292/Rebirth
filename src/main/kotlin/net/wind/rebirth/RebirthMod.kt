@@ -1,12 +1,11 @@
 package net.wind.rebirth
 
 import net.fabricmc.api.ModInitializer
-import net.minecraft.registry.RegistryKey
-import net.minecraft.registry.RegistryKeys
 import net.wind.rebirth.block.RebirthBlocks
 import net.wind.rebirth.item.RebirthItemGroup
 import net.wind.rebirth.item.RebirthItems
 import org.slf4j.LoggerFactory
+
 
 
 object RebirthMod : ModInitializer {
@@ -22,6 +21,9 @@ object RebirthMod : ModInitializer {
 		RebirthItemGroup.registerItemGroups()
 		RebirthBlocks.registerModBlocks()
 		RebirthBlocks.registerModOreSpawn() // lmao not like OreSpawn mod, is for generating ore
+		MagicCrownDamageLogic.registerDamageEventListener()
+
+
 
 	}
 }

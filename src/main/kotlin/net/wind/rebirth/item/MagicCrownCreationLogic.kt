@@ -1,4 +1,4 @@
-package net.wind.rebirth.item.magicCrown
+package net.wind.rebirth.item
 
 import com.google.common.collect.ImmutableMap
 import net.kaupenjoe.tutorialmod.item.ModArmorMaterials
@@ -15,9 +15,8 @@ class MagicCrownCreationLogic(material: ArmorMaterial?, type: Type?, settings: S
     ArmorItem(material, type, settings) {
     override fun inventoryTick(stack: ItemStack, world: World, entity: Entity, slot: Int, selected: Boolean) {
         if (!world.isClient()) {
-            if (entity is PlayerEntity && hasFullSuitOfArmorOn(entity)) {
-
-                if (entity.experienceLevel > 1){
+            if (entity is PlayerEntity && hasHelmOn(entity)) {
+                if (entity.experienceLevel >= 1){
                     evaluateArmorEffects(entity)
                 }
 
@@ -32,7 +31,6 @@ class MagicCrownCreationLogic(material: ArmorMaterial?, type: Type?, settings: S
                 for (effect in mapStatusEffect){
                     addStatusEffectForMaterial(player, mapArmorMaterial, effect)
                 }
-
             }
         }
     }
@@ -48,33 +46,24 @@ class MagicCrownCreationLogic(material: ArmorMaterial?, type: Type?, settings: S
         }
     }
 
-    private fun hasFullSuitOfArmorOn(player: PlayerEntity): Boolean {
-        val boots = player.inventory.getArmorStack(0)
-        val leggings = player.inventory.getArmorStack(1)
-        val breastplate = player.inventory.getArmorStack(2)
+    private fun hasHelmOn(player: PlayerEntity): Boolean {
+
         val helmet = player.inventory.getArmorStack(3)
-        return (!helmet.isEmpty && !breastplate.isEmpty
-                && !leggings.isEmpty && !boots.isEmpty)
+        return !helmet.isEmpty
     }
 
     private fun hasCorrectArmorOn(material: ArmorMaterial, player: PlayerEntity): Boolean {
-        for (armorStack in player.inventory.armor) {
-            if (armorStack.item !is ArmorItem) {
-                return false
-            }
-        }
         val helmet = player.inventory.getArmorStack(3).item as ArmorItem
-
-        return helmet.material == material
+        return helmet.material === material
     }
 
     companion object {
         private val MATERIAL_TO_EFFECT_MAP: Map<ArmorMaterial, List<StatusEffectInstance>> =
             ImmutableMap.Builder<ArmorMaterial, List<StatusEffectInstance>>()
                 .put(
-                    ModArmorMaterials.RUBY, listOf(
+                    ModArmorMaterials.MAGIC, listOf(
                         StatusEffectInstance(
-                            StatusEffects.RESISTANCE, 30, 1,
+                            StatusEffects.RESISTANCE, 15, 5,
                             false, false, false
                         )
                     )

@@ -5,12 +5,12 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.kaupenjoe.tutorialmod.item.ModArmorMaterials
 import net.kaupenjoe.tutorialmod.item.ModToolMaterial
-import net.wind.rebirth.item.magicCrown.MagicCrownCreationLogic
 import net.kaupenjoe.tutorialmod.item.custom.ModArmorItemWithFullSetBonus
 import net.minecraft.item.*
 import net.minecraft.registry.Registries
 import net.minecraft.util.Identifier
 import net.wind.rebirth.RebirthMod
+
 
 class RebirthItems {
 
@@ -33,7 +33,6 @@ class RebirthItems {
 
         val MAGIC_CROWN = registerItem("magic_crown", MagicCrownCreationLogic(ModArmorMaterials.MAGIC, ArmorItem.Type.HELMET, FabricItemSettings()))
 
-
         private fun addItemsToIngredientTabItemGroup(entries: FabricItemGroupEntries){
             entries.add(RUBY)
             entries.add(RAW_RUBY)
@@ -45,8 +44,12 @@ class RebirthItems {
 
         fun registerModItems() {
             RebirthMod.logger.info("Registering Mod Items for " + RebirthMod.MOD_ID)
-
             ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(RebirthItems::addItemsToIngredientTabItemGroup)
+
+            RebirthMod.logger.info("Registering Magic Crown logic for " + RebirthMod.MOD_ID)
+//            MagicCrownDamageLogic.registerDamageEventListener()
+
+
         }
     }
 

@@ -37,6 +37,8 @@ object RebirthItemGroup {
 
             entries.add(RebirthItems.RUBY)
 
+            entries.add(RebirthItems.MAGIC_CROWN)
+
 
         }
         .build()
