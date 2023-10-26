@@ -21,8 +21,6 @@ object RebirthMod : ModInitializer {
 		RebirthItemGroup.registerItemGroups()
 		RebirthBlocks.registerModBlocks()
 		RebirthBlocks.registerModOreSpawn() // lmao not like OreSpawn mod, is for generating ore
-		MagicCrownDamageLogic.registerDamageEventListener()
-
 
 
 	}

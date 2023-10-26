@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " # ",
+    "#x#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "rebirth:coke_coal_powder"
+    },
+    "x": {
+      "item": "rebirth:low_grade_steel_ingot"
+    }
+  },
+
+  "result": {
+    "item": "rebirth:high_grade_burden"
+  }
+}

@@ -39,6 +39,19 @@ object RebirthItemGroup {
 
             entries.add(RebirthItems.MAGIC_CROWN)
 
+            entries.add(RebirthItems.DRAGON_SCALE)
+
+            entries.add(RebirthItems.STEEL_HAMMER)
+            entries.add(RebirthItems.COKE_COAL)
+            entries.add(RebirthItems.COKE_COAL_POWDER)
+            entries.add(RebirthItems.COAL_POWDER)
+            entries.add(RebirthItems.HIGH_GRADE_STEEL_INGOT)
+            entries.add(RebirthItems.LOW_GRADE_STEEL_INGOT)
+            entries.add(RebirthItems.HIGH_GRADE_STEEL_CHAINMAIL)
+            entries.add(RebirthItems.LOW_GRADE_STEEL_CHAINMAIL)
+
+            entries.add(RebirthItems.LOW_GRADE_BURDEN)
+            entries.add(RebirthItems.HIGH_GRADE_BURDEN)
 
         }
         .build()

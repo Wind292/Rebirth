@@ -18,6 +18,7 @@ class RebirthItems {
 
         val RUBY: Item = registerItem("ruby", Item(FabricItemSettings()))
         val RAW_RUBY: Item = registerItem("raw_ruby", Item(FabricItemSettings()))
+        val E_ITEM: Item = registerItem("e", Item(FabricItemSettings()))
 
         val RUBY_HELMET = registerItem("ruby_helmet", ModArmorItemWithFullSetBonus(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, FabricItemSettings()))
         val RUBY_CHESTPLATE = registerItem("ruby_chestplate", ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, FabricItemSettings()))
@@ -32,6 +33,28 @@ class RebirthItems {
         val RUBY_HOE = registerItem("ruby_hoe", HoeItem(ModToolMaterial.RUBY, 4, -4f+ .5f, FabricItemSettings()))
 
         val MAGIC_CROWN = registerItem("magic_crown", MagicCrownCreationLogic(ModArmorMaterials.MAGIC, ArmorItem.Type.HELMET, FabricItemSettings()))
+
+        //dragonscale and steel
+        val STEEL_HAMMER: Item = registerItem("steel_hammer", Item(FabricItemSettings()))
+
+        val DRAGON_SCALE: Item = registerItem("dragon_scale", Item(FabricItemSettings()))
+
+        val HIGH_GRADE_STEEL_INGOT: Item = registerItem("high_grade_steel_ingot", Item(FabricItemSettings()))
+        val LOW_GRADE_STEEL_INGOT: Item = registerItem("low_grade_steel_ingot", Item(FabricItemSettings()))
+
+        val COKE_COAL: Item = registerItem("coke_coal", Item(FabricItemSettings()))
+        val COKE_COAL_POWDER: Item = registerItem("coke_coal_powder", Item(FabricItemSettings()))
+        val COAL_POWDER: Item = registerItem("coal_powder", Item(FabricItemSettings()))
+
+        val HIGH_GRADE_STEEL_CHAINMAIL: Item = registerItem("high_grade_steel_chainmail", Item(FabricItemSettings()))
+        val LOW_GRADE_STEEL_CHAINMAIL: Item = registerItem("low_grade_steel_chainmail", Item(FabricItemSettings()))
+
+        val HIGH_GRADE_BURDEN: Item = registerItem("high_grade_burden", Item(FabricItemSettings()))
+        val LOW_GRADE_BURDEN: Item = registerItem("low_grade_burden", Item(FabricItemSettings()))
+
+
+
+
 
         private fun addItemsToIngredientTabItemGroup(entries: FabricItemGroupEntries){
             entries.add(RUBY)

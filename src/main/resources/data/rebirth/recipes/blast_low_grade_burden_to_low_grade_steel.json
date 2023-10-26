@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime":800,
+  "experience": 1,
+  "ingredient": {
+    "item": "rebirth:low_grade_burden"
+  },
+  "result": "rebirth:low_grade_steel_ingot"
+}
