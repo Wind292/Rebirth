@@ -64,6 +64,12 @@ class RebirthItems {
         private fun registerItem(name: String, item: Item ): Item{
             return net.minecraft.registry.Registry.register(Registries.ITEM, Identifier(RebirthMod.MOD_ID, name), item)
         }
+//        private fun registerItemWithDurability(name: String, item: Item , durability: Int): Item{
+//            var newItem = item // declare newItem as var
+//            newItem.maxDamage = durability // set max durability
+//            return net.minecraft.registry.Registry.register(Registries.ITEM, Identifier(RebirthMod.MOD_ID, name), newItem)
+//        }
+
 
         fun registerModItems() {
             RebirthMod.logger.info("Registering Mod Items for " + RebirthMod.MOD_ID)
