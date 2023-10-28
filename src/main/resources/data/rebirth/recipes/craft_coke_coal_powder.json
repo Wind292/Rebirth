@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "rebirth:coke_coal"
+    },
+    {
+      "item": "rebirth:steel_hammer"
+    }
+  ],
+  "result": {
+    "item": "rebirth:coke_coal_powder",
+    "count": 2
+  }
+}
