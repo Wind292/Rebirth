@@ -1,7 +1,9 @@
 package net.wind.rebirth
 
+import HealCommand
 import net.fabricmc.api.ModInitializer
 import net.wind.rebirth.block.RebirthBlocks
+import net.wind.rebirth.commands.RebirthCommands
 import net.wind.rebirth.item.RebirthItemGroup
 import net.wind.rebirth.item.RebirthItems
 import org.slf4j.LoggerFactory
@@ -20,10 +22,8 @@ object RebirthMod : ModInitializer {
 		RebirthItems.registerModItems()
 		RebirthItemGroup.registerItemGroups()
 		RebirthBlocks.registerModBlocks()
-		RebirthBlocks.registerModOreSpawn() // lmao not like OreSpawn mod, is for generating ore
-		MagicCrownDamageLogic.registerDamageEventListener()
-
-
+		RebirthBlocks.registerModOreSpawn() // lmao not like OreSpawn mod, is for generating ore\
+		RebirthCommands.registerCommands()
 
 	}
 }

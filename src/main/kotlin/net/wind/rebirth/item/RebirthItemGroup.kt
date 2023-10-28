@@ -38,6 +38,10 @@ object RebirthItemGroup {
             entries.add(RebirthItems.RUBY)
 
             entries.add(RebirthItems.MAGIC_CROWN)
+            entries.add(RebirthItems.DARK_MAGIC_CROWN)
+
+            entries.add(RebirthItems.ICE_WAND)
+            entries.add(RebirthItems.GROUND_WAND)
 
 
         }

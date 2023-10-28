@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.item
+package net.wind.rebirth.item.material
 
 import net.minecraft.item.ToolMaterial
 import net.minecraft.recipe.Ingredient

@@ -49,5 +49,5 @@ class RebirthBlocks {
         fun registerModOreSpawn() {
             BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, RUBY_ORE_PLACE_KEY)
         }
-    }
+     }
 }

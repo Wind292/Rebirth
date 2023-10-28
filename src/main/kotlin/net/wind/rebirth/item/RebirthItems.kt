@@ -1,15 +1,20 @@
 package net.wind.rebirth.item
 
+import GroundWandItem
+import IceWandItem
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
-import net.kaupenjoe.tutorialmod.item.ModArmorMaterials
-import net.kaupenjoe.tutorialmod.item.ModToolMaterial
+import net.wind.rebirth.item.material.ModArmorMaterials
+import net.wind.rebirth.item.material.ModToolMaterial
 import net.kaupenjoe.tutorialmod.item.custom.ModArmorItemWithFullSetBonus
+import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.*
 import net.minecraft.registry.Registries
 import net.minecraft.util.Identifier
 import net.wind.rebirth.RebirthMod
+import net.wind.rebirth.item.custom.DarkMagicCrownItem
+import net.wind.rebirth.item.custom.MagicCrownItem
 
 
 class RebirthItems {
@@ -31,7 +36,12 @@ class RebirthItems {
         val RUBY_SHOVEL = registerItem("ruby_shovel", ShovelItem(ModToolMaterial.RUBY, 5.0f, -4f+ 1f, FabricItemSettings()))
         val RUBY_HOE = registerItem("ruby_hoe", HoeItem(ModToolMaterial.RUBY, 4, -4f+ .5f, FabricItemSettings()))
 
-        val MAGIC_CROWN = registerItem("magic_crown", MagicCrownCreationLogic(ModArmorMaterials.MAGIC, ArmorItem.Type.HELMET, FabricItemSettings()))
+        val MAGIC_CROWN = registerItem("magic_crown", MagicCrownItem(ModArmorMaterials.MAGIC, ArmorItem.Type.HELMET, FabricItemSettings()))
+        val DARK_MAGIC_CROWN = registerItem("dark_magic_crown", DarkMagicCrownItem(ModArmorMaterials.DARK_MAGIC, ArmorItem.Type.HELMET, FabricItemSettings()))
+
+        val ICE_WAND: Item = registerItem("ice_wand", IceWandItem(FabricItemSettings()))
+
+        val GROUND_WAND: Item = registerItem("ground_wand", GroundWandItem(FabricItemSettings()))
 
         private fun addItemsToIngredientTabItemGroup(entries: FabricItemGroupEntries){
             entries.add(RUBY)
@@ -51,6 +61,17 @@ class RebirthItems {
 
 
         }
+        fun hasItemInInventory(player: PlayerEntity, itemToCheck: Item): Boolean {
+            for (itemStack in player.inventory.main) {
+                if (itemStack.item === itemToCheck) {
+                    return true // The item is found in the player's inventory
+                }
+            }
+            return false // The item is not found in the player's inventory
+        }
+
     }
+
+
 
 }
