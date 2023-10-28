@@ -27,18 +27,6 @@ object RebirthMod : ModInitializer {
 		RebirthCommands.registerCommands()
 
 		RebirthBlocks.registerModOreSpawn() // lmao not like OreSpawn mod, is for generating ore
-		PlayerCraftingCallback.EVENT.register { player, inventory, result ->
-			// Check if the crafting result is not null and do something
-			if (result != null && !result.isEmpty()) {
-				// Do something when a player crafts an item
-				// For example, print a message to the console
-				System.out.println(
-					("Player " + player.getName().getString()).toString() + " crafted: " + result.getName().getString()
-				)
 
-				// You can add your custom code here to execute when a player crafts something
-				// For instance, trigger additional actions, effects, or modify the game state.
-			}
-		}
 	}
 }
