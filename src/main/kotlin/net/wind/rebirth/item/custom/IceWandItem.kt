@@ -1,3 +1,4 @@
+import net.minecraft.block.Block
 import net.minecraft.block.Blocks
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.Item
@@ -5,11 +6,10 @@ import net.minecraft.item.ItemStack
 import net.minecraft.util.Hand
 import net.minecraft.util.TypedActionResult
 import net.minecraft.world.World
-import net.wind.rebirth.block.RebirthBlocks
+import net.wind.rebirth.RebirthMod
 import java.util.concurrent.Executors
 import java.util.concurrent.ScheduledExecutorService
 import java.util.concurrent.TimeUnit
-import kotlin.concurrent.thread
 
 class IceWandItem(settings: Settings?) : Item(settings) {
     private val executor: ScheduledExecutorService = Executors.newScheduledThreadPool(1)
@@ -18,7 +18,10 @@ class IceWandItem(settings: Settings?) : Item(settings) {
         val Position = playerEntity.blockPos.down(1) // Set the coordinates where you want to place the block
         val BlockToReplaceWith = Blocks.BLUE_ICE.defaultState
 
-        if (world != null) {
+
+
+        if (world != null && !isBlockUnbreakable(world.getBlockState(Position).block)) {
+
             val originalBlock = world.getBlockState(Position)
             world.setBlockState(Position, BlockToReplaceWith)
 
@@ -30,5 +33,11 @@ class IceWandItem(settings: Settings?) : Item(settings) {
             }, 3, TimeUnit.SECONDS)
         }
         return TypedActionResult.success(playerEntity.getStackInHand(hand))
+    }
+
+    fun isBlockUnbreakable(block: Block): Boolean {
+        // Check if the block is unbreakable based on its hardness
+        RebirthMod.logger.info(block.getHardness().toString())
+        return block.getHardness() < 0.0f // Blocks with hardness less than 0 are considered unbreakable
     }
 }

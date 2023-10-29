@@ -28,12 +28,6 @@ object RebirthItemGroup {
             entries.add(RebirthBlocks.RUBY_ORE)
             entries.add(RebirthBlocks.DEEPSLATE_RUBY_ORE)
 
-            entries.add(RebirthItems.RUBY_HELMET)
-            entries.add(RebirthItems.RUBY_CHESTPLATE)
-            entries.add(RebirthItems.RUBY_LEGGINGS)
-            entries.add(RebirthItems.RUBY_BOOTS)
-            entries.add(RebirthBlocks. SOUND_BLOCK)
-
             entries.add(RebirthItems.RUBY_SWORD)
             entries.add(RebirthItems.RUBY_LONGSWORD)
             entries.add(RebirthItems.RUBY_PICKAXE)
@@ -62,7 +56,7 @@ object RebirthItemGroup {
 
             entries.add(RebirthItems.LOW_GRADE_BURDEN)
             entries.add(RebirthItems.HIGH_GRADE_BURDEN)
-
+//
             entries.add(RebirthBlocks.HAMMER_BLOCK)
             entries.add(RebirthBlocks.SOUND_BLOCK)
         }

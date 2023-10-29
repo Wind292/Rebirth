@@ -81,7 +81,9 @@ class GroundWandItem(settings: Settings?) : Item(settings) {
 
             }
             for (blockpos in BlockArray) {
-                world.setBlockState(blockpos,BlockToReplaceWith)
+                if (!isBlockUnbreakable(world.getBlockState(blockpos).block)){
+                    world.setBlockState(blockpos,BlockToReplaceWith)
+                }
             }
 
             executor.schedule({
@@ -105,5 +107,9 @@ class GroundWandItem(settings: Settings?) : Item(settings) {
         val index = MathHelper.floor(yaw * 4.0 / 360.0 + 0.5) and 3
         val directions = arrayOf("South", "West", "North", "East")
         return directions[index]
+    }
+    fun isBlockUnbreakable(block: Block): Boolean {
+        // Check if the block is unbreakable based on its hardness
+        return block.getHardness() < 0.0f // Blocks with hardness less than 0 are considered unbreakable
     }
 }
