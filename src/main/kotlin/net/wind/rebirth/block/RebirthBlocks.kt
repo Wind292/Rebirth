@@ -4,18 +4,14 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
-import net.minecraft.block.AbstractBlock
 import net.minecraft.block.Block
 import net.minecraft.block.Blocks
-import net.minecraft.block.MapColor
-import net.minecraft.block.enums.Instrument
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
 import net.minecraft.registry.RegistryKey
 import net.minecraft.registry.RegistryKeys
-import net.minecraft.sound.BlockSoundGroup
 import net.minecraft.util.Identifier
 import net.minecraft.world.gen.GenerationStep
 import net.wind.rebirth.RebirthMod
@@ -29,7 +25,10 @@ class RebirthBlocks {
         val RUBY_BLOCK = registerBlock("ruby_block", Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)))
 
         val RAW_RUBY_BLOCK = registerBlock("raw_ruby_block", Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)))
-        val SOUND_BLOCK = registerBlock("sound_block", Block(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK)))
+        val SOUND_BLOCK = registerBlock(
+            "sound_block",
+            SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))
+        )
 
         val DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore", Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).hardness(6.0f)))
         val RUBY_ORE = registerBlock("ruby_ore", Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).hardness(4.5f)))
