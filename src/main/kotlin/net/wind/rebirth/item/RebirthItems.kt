@@ -2,19 +2,21 @@ package net.wind.rebirth.item
 
 import GroundWandItem
 import IceWandItem
+import UnrealBow
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
-import net.wind.rebirth.item.material.ModArmorMaterials
-import net.wind.rebirth.item.material.ModToolMaterial
 import net.kaupenjoe.tutorialmod.item.custom.ModArmorItemWithFullSetBonus
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.*
 import net.minecraft.registry.Registries
 import net.minecraft.util.Identifier
+import net.minecraft.util.Rarity
 import net.wind.rebirth.RebirthMod
 import net.wind.rebirth.item.custom.DarkMagicCrownItem
 import net.wind.rebirth.item.custom.MagicCrownItem
+import net.wind.rebirth.item.material.ModArmorMaterials
+import net.wind.rebirth.item.material.ModToolMaterial
 
 
 class RebirthItems {
@@ -23,7 +25,7 @@ class RebirthItems {
 
         val RUBY: Item = registerItem("ruby", Item(FabricItemSettings()))
         val RAW_RUBY: Item = registerItem("raw_ruby", Item(FabricItemSettings()))
-        val E_ITEM: Item = registerItem("e", Item(FabricItemSettings()))
+        val E_ITEM: Item = registerItem("e", Item(FabricItemSettings().maxCount(1)))
 
         val RUBY_HELMET = registerItem("ruby_helmet", ModArmorItemWithFullSetBonus(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, FabricItemSettings()))
         val RUBY_CHESTPLATE = registerItem("ruby_chestplate", ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, FabricItemSettings()))
@@ -37,17 +39,17 @@ class RebirthItems {
         val RUBY_SHOVEL = registerItem("ruby_shovel", ShovelItem(ModToolMaterial.RUBY, 5.0f, -4f+ 1f, FabricItemSettings()))
         val RUBY_HOE = registerItem("ruby_hoe", HoeItem(ModToolMaterial.RUBY, 4, -4f+ .5f, FabricItemSettings()))
 
-        val MAGIC_CROWN = registerItem("magic_crown", MagicCrownItem(ModArmorMaterials.MAGIC, ArmorItem.Type.HELMET, FabricItemSettings()))
-        val DARK_MAGIC_CROWN = registerItem("dark_magic_crown", DarkMagicCrownItem(ModArmorMaterials.DARK_MAGIC, ArmorItem.Type.HELMET, FabricItemSettings()))
+        val MAGIC_CROWN = registerItem("magic_crown", MagicCrownItem(ModArmorMaterials.MAGIC, ArmorItem.Type.HELMET, FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)))
+        val DARK_MAGIC_CROWN = registerItem("dark_magic_crown", DarkMagicCrownItem(ModArmorMaterials.DARK_MAGIC, ArmorItem.Type.HELMET, FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)))
 
-        val ICE_WAND: Item = registerItem("ice_wand", IceWandItem(FabricItemSettings()))
+        val ICE_WAND: Item = registerItem("ice_wand", IceWandItem(FabricItemSettings().maxCount(1)))
 
-        val GROUND_WAND: Item = registerItem("ground_wand", GroundWandItem(FabricItemSettings()))
+        val GROUND_WAND: Item = registerItem("ground_wand", GroundWandItem(FabricItemSettings().maxCount(1)))
 
         //dragonscale and steel
-        val STEEL_HAMMER: Item = registerItem("steel_hammer", Item(FabricItemSettings()))
+        val STEEL_HAMMER: Item = registerItem("steel_hammer", Item(FabricItemSettings().maxCount(1)))
 
-        val DRAGON_SCALE: Item = registerItem("dragon_scale", Item(FabricItemSettings()))
+        val DRAGON_SCALE: Item = registerItem("dragon_scale", Item(FabricItemSettings().rarity(Rarity.EPIC)))
 
         val HIGH_GRADE_STEEL_INGOT: Item = registerItem("high_grade_steel_ingot", Item(FabricItemSettings()))
         val LOW_GRADE_STEEL_INGOT: Item = registerItem("low_grade_steel_ingot", Item(FabricItemSettings()))
@@ -61,6 +63,8 @@ class RebirthItems {
 
         val HIGH_GRADE_BURDEN: Item = registerItem("high_grade_burden", Item(FabricItemSettings()))
         val LOW_GRADE_BURDEN: Item = registerItem("low_grade_burden", Item(FabricItemSettings()))
+
+        val UNREAL_BOW: Item = registerItem("unreal_bow", UnrealBow(FabricItemSettings().maxCount(1)))
 
 
 

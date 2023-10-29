@@ -43,5 +43,7 @@
   "block.rebirth.hammer_block": "Hammer Block",
   "block.rebirth.sound_block": "Sound Block (for development)",
 
+  "item.rebirth.unreal_bow": "Unreal Bow",
+
   "itemGroup.rebirth.rebirth_group": "Rebirth Items"
 }

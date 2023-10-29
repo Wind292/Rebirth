@@ -59,6 +59,8 @@ object RebirthItemGroup {
 //
             entries.add(RebirthBlocks.HAMMER_BLOCK)
             entries.add(RebirthBlocks.SOUND_BLOCK)
+
+            entries.add(RebirthItems.UNREAL_BOW)
         }
         .build()
 
