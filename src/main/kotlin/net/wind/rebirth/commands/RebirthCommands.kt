@@ -5,7 +5,7 @@ import HealCommand
 class RebirthCommands {
     companion object{
         public fun registerCommands(){
-//            HealCommand.InnitHealCommand()
+            HealCommand.InnitHealCommand()
         }
     }
 }

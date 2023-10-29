@@ -25,10 +25,7 @@
   "item.rebirth.ice_wand": "Ice Wand",
   "item.rebirth.ground_wand": "Ground Wand",
 
-
   "item.rebirth.e": "e",
-
-  "itemGroup.rebirth.rebirth_group": "Rebirth Items",
 
   "item.rebirth.steel_hammer": "Steel Hammer",
   "item.rebirth.dragon_scale": "Dragon Scale",
@@ -41,8 +38,10 @@
   "item.rebirth.coal_powder": "Coal Powder",
 
   "item.rebirth.high_grade_burden": "High Grade Burden",
-  "item.rebirth.low_grade_burden": "Low Grade Burden"
+  "item.rebirth.low_grade_burden": "Low Grade Burden",
 
+  "block.rebirth.hammer_block": "Hammer Block",
+  "block.rebirth.sound_block": "Sound Block (for development)",
 
-
+  "itemGroup.rebirth.rebirth_group": "Rebirth Items"
 }
