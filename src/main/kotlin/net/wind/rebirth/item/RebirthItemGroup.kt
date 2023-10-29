@@ -57,6 +57,8 @@ object RebirthItemGroup {
             entries.add(RebirthItems.LOW_GRADE_BURDEN)
             entries.add(RebirthItems.HIGH_GRADE_BURDEN)
 
+            entries.add(RebirthBlocks.HAMMER_BLOCK)
+            entries.add(RebirthBlocks.SOUND_BLOCK)
         }
         .build()
 

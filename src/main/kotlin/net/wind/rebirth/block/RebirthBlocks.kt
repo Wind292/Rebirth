@@ -35,6 +35,7 @@ class RebirthBlocks {
         val RUBY_ORE = registerBlock("ruby_ore", Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).hardness(4.5f)))
         val RUBY_ORE_PLACE_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier("rebirth", "ruby_ore"))
 
+        val HAMMER_BLOCK = registerBlock("hammer_block", Block(FabricBlockSettings.copyOf(Blocks.SMITHING_TABLE)))
 
         private fun registerBlock(name: String, block: Block): Block {
             registerBlockItem(name, block)
