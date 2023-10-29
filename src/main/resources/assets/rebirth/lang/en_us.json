@@ -19,6 +19,30 @@
   "item.rebirth.ruby_shovel": "Ruby Shovel",
   "item.rebirth.ruby_hoe": "Ruby Hoe",
 
-  "itemGroup.rebirth.rebirth_group": "Rebirth Items"
+  "item.rebirth.magic_crown": "Magic Crown",
+  "item.rebirth.dark_magic_crown": "Dark Magic Crown",
+
+  "item.rebirth.ice_wand": "Ice Wand",
+  "item.rebirth.ground_wand": "Ground Wand",
+
+
+  "item.rebirth.e": "e",
+
+  "itemGroup.rebirth.rebirth_group": "Rebirth Items",
+
+  "item.rebirth.steel_hammer": "Steel Hammer",
+  "item.rebirth.dragon_scale": "Dragon Scale",
+  "item.rebirth.high_grade_steel_ingot": "High Grade Steel Ingot",
+  "item.rebirth.low_grade_steel_ingot": "Low Grade Steel Ingot",
+  "item.rebirth.high_grade_steel_chainmail": "High Grade Steel Chainmail",
+  "item.rebirth.low_grade_steel_chainmail": "Low Grade Steel Chainmail",
+  "item.rebirth.coke_coal": "Coke Coal",
+  "item.rebirth.coke_coal_powder": "Coke Coal Powder",
+  "item.rebirth.coal_powder": "Coal Powder",
+
+  "item.rebirth.high_grade_burden": "High Grade Burden",
+  "item.rebirth.low_grade_burden": "Low Grade Burden"
+
+
 
 }

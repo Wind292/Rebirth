@@ -17,7 +17,11 @@ object RebirthItemGroup {
         .displayName(Text.translatable("itemGroup.rebirth.rebirth_group"))
         .entries { _, entries ->
 
-            entries.add(RebirthItems.RUBY)
+            entries.add(RebirthItems.RUBY_HELMET)
+            entries.add(RebirthItems.RUBY_CHESTPLATE)
+            entries.add(RebirthItems.RUBY_LEGGINGS)
+            entries.add(RebirthItems.RUBY_BOOTS)
+
             entries.add(RebirthItems.RAW_RUBY)
             entries.add(RebirthBlocks.RUBY_BLOCK)
             entries.add(RebirthBlocks.RAW_RUBY_BLOCK)
@@ -37,6 +41,27 @@ object RebirthItemGroup {
             entries.add(RebirthItems.RUBY_SHOVEL)
             entries.add(RebirthItems.RUBY_HOE)
 
+            entries.add(RebirthItems.RUBY)
+
+            entries.add(RebirthItems.MAGIC_CROWN)
+            entries.add(RebirthItems.DARK_MAGIC_CROWN)
+
+            entries.add(RebirthItems.ICE_WAND)
+            entries.add(RebirthItems.GROUND_WAND)
+
+            entries.add(RebirthItems.DRAGON_SCALE)
+
+            entries.add(RebirthItems.STEEL_HAMMER)
+            entries.add(RebirthItems.COKE_COAL)
+            entries.add(RebirthItems.COKE_COAL_POWDER)
+            entries.add(RebirthItems.COAL_POWDER)
+            entries.add(RebirthItems.HIGH_GRADE_STEEL_INGOT)
+            entries.add(RebirthItems.LOW_GRADE_STEEL_INGOT)
+            entries.add(RebirthItems.HIGH_GRADE_STEEL_CHAINMAIL)
+            entries.add(RebirthItems.LOW_GRADE_STEEL_CHAINMAIL)
+
+            entries.add(RebirthItems.LOW_GRADE_BURDEN)
+            entries.add(RebirthItems.HIGH_GRADE_BURDEN)
 
         }
         .build()

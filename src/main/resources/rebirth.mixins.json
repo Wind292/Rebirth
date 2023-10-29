@@ -3,7 +3,7 @@
 	"package": "net.wind.rebirth.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"Mixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

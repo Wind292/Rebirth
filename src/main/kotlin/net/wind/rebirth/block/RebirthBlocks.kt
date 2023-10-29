@@ -30,8 +30,8 @@ class RebirthBlocks {
             SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK))
         )
 
-        val DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore", Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).hardness(6.0f)))
-        val RUBY_ORE = registerBlock("ruby_ore", Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).hardness(4.5f)))
+        val DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore", Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE).hardness(6.0f)))
+        val RUBY_ORE = registerBlock("ruby_ore", Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).hardness(4.5f)))
         val RUBY_ORE_PLACE_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier("rebirth", "ruby_ore"))
 
 
@@ -48,5 +48,5 @@ class RebirthBlocks {
         fun registerModOreSpawn() {
             BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, RUBY_ORE_PLACE_KEY)
         }
-    }
+     }
 }

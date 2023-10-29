@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "# #",
+    " # ",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "rebirth:low_grade_steel_ingot"
+    }
+  },
+
+  "result": {
+    "item": "rebirth:low_grade_steel_chainmail"
+  }
+}

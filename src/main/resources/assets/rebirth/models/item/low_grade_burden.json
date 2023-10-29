@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+      "layer0": "rebirth:item/low_grade_burden"
+  }
+}
