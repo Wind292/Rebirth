@@ -28,7 +28,7 @@ object RebirthItemGroup {
             entries.add(RebirthItems.RUBY_CHESTPLATE)
             entries.add(RebirthItems.RUBY_LEGGINGS)
             entries.add(RebirthItems.RUBY_BOOTS)
-            //entries.add(RebirthItems.SOUND_BLOCK)
+            entries.add(RebirthBlocks. SOUND_BLOCK)
 
             entries.add(RebirthItems.RUBY_SWORD)
             entries.add(RebirthItems.RUBY_LONGSWORD)

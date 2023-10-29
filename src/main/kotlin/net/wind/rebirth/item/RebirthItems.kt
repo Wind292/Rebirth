@@ -3,9 +3,11 @@ package net.wind.rebirth.item
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
+import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.kaupenjoe.tutorialmod.item.ModArmorMaterials
 import net.kaupenjoe.tutorialmod.item.ModToolMaterial
 import net.kaupenjoe.tutorialmod.item.custom.ModArmorItemWithFullSetBonus
+import net.minecraft.block.Block
 import net.minecraft.item.*
 import net.minecraft.registry.Registries
 import net.minecraft.util.Identifier
@@ -38,12 +40,16 @@ class RebirthItems {
         private fun registerItem(name: String, item: Item ): Item{
             return net.minecraft.registry.Registry.register(Registries.ITEM, Identifier(RebirthMod.MOD_ID, name), item)
         }
-
+    private fun registerBlock(name: String, block: Block): Block{
+        return net.minecraft.registry.Registry.register(Registries.BLOCK, Identifier(RebirthMod.MOD_ID, name), block)
+    }
         fun registerModItems() {
             RebirthMod.logger.info("Registering Mod Items for " + RebirthMod.MOD_ID)
 
             ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(RebirthItems::addItemsToIngredientTabItemGroup)
         }
     }
+
+
 
 }
