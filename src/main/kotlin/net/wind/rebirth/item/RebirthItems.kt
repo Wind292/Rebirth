@@ -22,10 +22,9 @@ import net.wind.rebirth.item.material.ModToolMaterial
 class RebirthItems {
 
     companion object {
-
+        //  ruby stuff
         val RUBY: Item = registerItem("ruby", Item(FabricItemSettings()))
         val RAW_RUBY: Item = registerItem("raw_ruby", Item(FabricItemSettings()))
-        val E_ITEM: Item = registerItem("e", Item(FabricItemSettings().maxCount(1)))
 
         val RUBY_HELMET = registerItem("ruby_helmet", ModArmorItemWithFullSetBonus(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, FabricItemSettings()))
         val RUBY_CHESTPLATE = registerItem("ruby_chestplate", ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, FabricItemSettings()))
@@ -38,13 +37,6 @@ class RebirthItems {
         val RUBY_AXE = registerItem("ruby_axe", AxeItem(ModToolMaterial.RUBY, 10.0f, -4f+ 1.15f, FabricItemSettings()))
         val RUBY_SHOVEL = registerItem("ruby_shovel", ShovelItem(ModToolMaterial.RUBY, 5.0f, -4f+ 1f, FabricItemSettings()))
         val RUBY_HOE = registerItem("ruby_hoe", HoeItem(ModToolMaterial.RUBY, 4, -4f+ .5f, FabricItemSettings()))
-
-        val MAGIC_CROWN = registerItem("magic_crown", MagicCrownItem(ModArmorMaterials.MAGIC, ArmorItem.Type.HELMET, FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)))
-        val DARK_MAGIC_CROWN = registerItem("dark_magic_crown", DarkMagicCrownItem(ModArmorMaterials.DARK_MAGIC, ArmorItem.Type.HELMET, FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)))
-
-        val ICE_WAND: Item = registerItem("ice_wand", IceWandItem(FabricItemSettings().maxCount(1)))
-
-        val GROUND_WAND: Item = registerItem("ground_wand", GroundWandItem(FabricItemSettings().maxCount(1)))
 
         //dragonscale and steel
         val STEEL_HAMMER: Item = registerItem("steel_hammer", Item(FabricItemSettings().maxCount(1)))
@@ -64,7 +56,16 @@ class RebirthItems {
         val HIGH_GRADE_BURDEN: Item = registerItem("high_grade_burden", Item(FabricItemSettings()))
         val LOW_GRADE_BURDEN: Item = registerItem("low_grade_burden", Item(FabricItemSettings()))
 
+        // Tools and Weapons
+        val E_ITEM: Item = registerItem("e", Item(FabricItemSettings().maxCount(999) ))
+
         val UNREAL_BOW: Item = registerItem("unreal_bow", UnrealBow(FabricItemSettings().maxCount(1)))
+
+        val MAGIC_CROWN = registerItem("magic_crown", MagicCrownItem(ModArmorMaterials.MAGIC, ArmorItem.Type.HELMET, FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)))
+        val DARK_MAGIC_CROWN = registerItem("dark_magic_crown", DarkMagicCrownItem(ModArmorMaterials.DARK_MAGIC, ArmorItem.Type.HELMET, FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)))
+
+        val ICE_WAND: Item = registerItem("ice_wand", IceWandItem(FabricItemSettings().maxCount(1)))
+        val GROUND_WAND: Item = registerItem("ground_wand", GroundWandItem(FabricItemSettings().maxCount(1)))
 
 
 

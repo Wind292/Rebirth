@@ -3,10 +3,12 @@ import net.minecraft.block.Blocks
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
+import net.minecraft.sound.SoundCategory
 import net.minecraft.util.Hand
 import net.minecraft.util.TypedActionResult
 import net.minecraft.world.World
 import net.wind.rebirth.RebirthMod
+import net.wind.rebirth.sounds.RebirthSounds
 import java.util.concurrent.Executors
 import java.util.concurrent.ScheduledExecutorService
 import java.util.concurrent.TimeUnit
@@ -24,6 +26,8 @@ class IceWandItem(settings: Settings?) : Item(settings) {
 
             val originalBlock = world.getBlockState(Position)
             world.setBlockState(Position, BlockToReplaceWith)
+
+            world.playSound(null, playerEntity.blockPos, RebirthSounds.USE_ICE_WAND, SoundCategory.PLAYERS, 1f,1f)
 
             executor.schedule({
                 // Your task code here

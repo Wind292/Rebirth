@@ -1,0 +1,20 @@
+{
+  "unreal_bow_shoot": {
+    "subtitle": "sounds.rebirth.unreal_bow_shoot",
+    "sounds" : [
+      "rebirth:unreal_bow_shoot"
+    ]
+  },
+  "use_ice_wand": {
+    "subtitle": "sounds.rebirth.used_ice_wand",
+    "sounds" : [
+      "rebirth:use_ice_wand"
+    ]
+  },
+  "use_ground_wand": {
+  "subtitle": "sounds.rebirth.used_ground_wand",
+  "sounds" : [
+    "rebirth:use_ground_wand"
+  ]
+}
+}

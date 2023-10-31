@@ -6,6 +6,7 @@ import net.wind.rebirth.block.RebirthBlocks
 import net.wind.rebirth.commands.RebirthCommands
 import net.wind.rebirth.item.RebirthItemGroup
 import net.wind.rebirth.item.RebirthItems
+import net.wind.rebirth.sounds.RebirthSounds
 import org.slf4j.LoggerFactory
 
 
@@ -28,5 +29,6 @@ object RebirthMod : ModInitializer {
 
 		RebirthBlocks.registerModOreSpawn() // lmao not like OreSpawn mod, is for generating ore
 
+		RebirthSounds.registerSounds()
 	}
 }

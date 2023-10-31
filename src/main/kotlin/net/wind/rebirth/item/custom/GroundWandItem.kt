@@ -4,6 +4,7 @@ import net.minecraft.block.Blocks
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
+import net.minecraft.sound.SoundCategory
 import net.minecraft.util.Hand
 import net.minecraft.util.TypedActionResult
 import net.minecraft.util.math.BlockPos
@@ -18,6 +19,8 @@ import java.util.concurrent.TimeUnit
 import kotlin.concurrent.thread
 import kotlin.reflect.jvm.internal.impl.load.kotlin.BinaryClassAnnotationAndConstantLoaderImplKt
 import net.minecraft.util.math.MathHelper
+import net.wind.rebirth.sounds.RebirthSounds
+
 class GroundWandItem(settings: Settings?) : Item(settings) {
     private val executor: ScheduledExecutorService = Executors.newScheduledThreadPool(1)
     override fun use(world: World?, playerEntity: PlayerEntity, hand: Hand?): TypedActionResult<ItemStack> {
@@ -85,6 +88,8 @@ class GroundWandItem(settings: Settings?) : Item(settings) {
                     world.setBlockState(blockpos,BlockToReplaceWith)
                 }
             }
+
+            world.playSound(null, playerEntity.blockPos, RebirthSounds.USE_GROUND_WAND, SoundCategory.PLAYERS, 1f,1f)
 
             executor.schedule({
                 // Your task code here
