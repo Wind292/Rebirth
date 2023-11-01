@@ -67,6 +67,7 @@ class RebirthItems {
         val ICE_WAND: Item = registerItem("ice_wand", IceWandItem(FabricItemSettings().maxCount(1)))
         val GROUND_WAND: Item = registerItem("ground_wand", GroundWandItem(FabricItemSettings().maxCount(1)))
 
+        val TOMATO: Item = registerItem("tomato", Item(FabricItemSettings()))
 
 
 

@@ -19,13 +19,6 @@ class Mixin {
         RebirthMod.logger.info("INNIT MIXING STUF=========================================")
     }
 
-    @Mixin(CraftingResultSlot::class)
-    inner class CraftingResultSlotMixin {
-        @Inject(at = [At("RETURN")], method = ["onTakeItem"])
-        private fun onTakeItem(player: PlayerEntity, stack: ItemStack, info: CallbackInfoReturnable<ItemStack>) {
-            // Your code here
-            RebirthMod.logger.info("$player crafted $stack")
-        }
-    }
+
 
 }

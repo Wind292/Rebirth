@@ -41,7 +41,6 @@ class IceWandItem(settings: Settings?) : Item(settings) {
 
     fun isBlockUnbreakable(block: Block): Boolean {
         // Check if the block is unbreakable based on its hardness
-        RebirthMod.logger.info(block.getHardness().toString())
         return block.getHardness() < 0.0f // Blocks with hardness less than 0 are considered unbreakable
     }
 }

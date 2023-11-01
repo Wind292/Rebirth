@@ -13,6 +13,7 @@ class RebirthSounds {
 
         val USE_ICE_WAND: SoundEvent = registerSoundEvent("use_ice_wand")
 
+        val USE_GROUND_WAND: SoundEvent = registerSoundEvent("use_ground_wand")
 
         fun registerSoundEvent(name: String): SoundEvent {
             val id : Identifier = Identifier(RebirthMod.MOD_ID, name)

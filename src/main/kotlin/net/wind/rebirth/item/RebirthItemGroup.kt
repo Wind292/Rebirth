@@ -61,6 +61,11 @@ object RebirthItemGroup {
             entries.add(RebirthBlocks.SOUND_BLOCK)
 
             entries.add(RebirthItems.UNREAL_BOW)
+
+            entries.add(RebirthBlocks.TOMATO_PLANT)
+            entries.add(RebirthItems.TOMATO)
+
+
         }
         .build()
 

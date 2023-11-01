@@ -1,11 +1,18 @@
 {
-  "item.rebirth.ruby": "Ruby",
-  "item.rebirth.raw_ruby": "Raw Ruby",
+
+
+
+
+  "block.rebirth.hammer_block": "Hammer Block",
+  "block.rebirth.sound_block": "Sound Block (for development)",
 
   "block.rebirth.ruby_block": "Ruby Block",
   "block.rebirth.raw_ruby_block": "Raw Ruby Block",
   "block.rebirth.ruby_ore": "Ruby Ore",
   "block.rebirth.deepslate_ruby_ore": "Deepslate Ruby Ore",
+
+  "item.rebirth.ruby": "Ruby",
+  "item.rebirth.raw_ruby": "Raw Ruby",
 
   "item.rebirth.ruby_helmet": "Ruby Helmet",
   "item.rebirth.ruby_chestplate": "Ruby Chestplate",
@@ -40,10 +47,12 @@
   "item.rebirth.high_grade_burden": "High Grade Burden",
   "item.rebirth.low_grade_burden": "Low Grade Burden",
 
-  "block.rebirth.hammer_block": "Hammer Block",
-  "block.rebirth.sound_block": "Sound Block (for development)",
-
   "item.rebirth.unreal_bow": "Unreal Bow",
+
+  "block.rebirth.tomato_plant": "Tomato Plant",
+
+  "item.rebirth.tomato": "Tomato",
+
 
   "sounds.rebirth.unreal_bow_shoot": "Unreal Bow Fires",
 
